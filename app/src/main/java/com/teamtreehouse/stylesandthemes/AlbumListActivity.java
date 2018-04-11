@@ -29,7 +29,6 @@ public class AlbumListActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_album_list);
-
         ButterKnife.bind(this);
         populate();
     }

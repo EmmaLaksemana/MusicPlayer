@@ -10,6 +10,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.google.gson.Gson;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import java.util.List;
@@ -84,6 +87,7 @@ public class AlbumDetailActivity extends Activity {
         songListView.setLayoutManager(lm);
 
         final List<Song> songs = Song.songList;
+        System.out.println("cek songList : " + new Gson().toJsonTree(songs));
 
         RecyclerView.Adapter adapter = new RecyclerView.Adapter<SongVH>() {
             @Override

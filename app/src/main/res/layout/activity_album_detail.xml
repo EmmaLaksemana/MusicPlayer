@@ -35,12 +35,13 @@
   <TextView
       android:id="@+id/album_title"
       android:layout_marginTop="8dp"
-      android:text="Mean Something"
+      android:text="@string/app_name"
       app:layout_constraintDimensionRatio="h,1:1"
       app:layout_constraintLeft_toLeftOf="@+id/artist"
       app:layout_constraintRight_toRightOf="@+id/artist"
       app:layout_constraintTop_toTopOf="@+id/space"
       style="@style/PlaybackScreenSongStyle"/>
+
   <Space
       android:id="@+id/space"
       android:layout_width="0dp"
